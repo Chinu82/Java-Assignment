@@ -20,22 +20,20 @@ class AccountDetails{
 }
 class Deposit{
     Scanner sc = new Scanner(System.in);
-    AccountDetails ad = new AccountDetails();
     void depositAmount(){
         System.out.print("Enter amount to Deposite : ");
         double amt = sc.nextInt();
-        ad.amount = amt + ad.amount;
-        System.out.println("Your amount is : "+ad.amount);
+        AccountDetails.amount = amt + AccountDetails.amount;
+        System.out.println("Your amount is : "+AccountDetails.amount);
     }
 }
 class Withdraw{
     Scanner sc = new Scanner(System.in);
-    AccountDetails ad = new AccountDetails();
     void withdrawAmmount(){
         System.out.print("Enter Ammount to Withdraw : ");
         double amt = sc.nextDouble();
-        ad.amount = ad.amount - amt;
-        System.out.println("Your Current Balance is : "+ad.amount);
+        AccountDetails.amount = AccountDetails.amount - amt;
+        System.out.println("Your Current Balance is : "+AccountDetails.amount);
     }
 }
 class MyAccount{
